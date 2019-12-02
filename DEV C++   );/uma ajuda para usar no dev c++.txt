@@ -1,0 +1,117 @@
+// inclui biblioteca padrao de entrada e saida
+/*
+Programa: hello wold
+Função:escreve na tela Hello world
+Autor e autor: Matheus Gabriel e Silva e Pedro Henrique Silva Forti
+Data de criação: 25/09/2019
+Data de alteração: 25/09/2019
+*/
+#include <stdio.h>
+#include <windows.h>
+
+int main(){
+	printf("oi Gente...!!! = Hello World!!!");
+        printf("Etec Antonio Devisate\n\n");
+	system("pause");
+}
+
+-----------------------------------------------------------------------------------------
+
+soma:
+/*
+função: Somar dois numeros
+Autor e autor: Matheus Gabriel e Silva e Pedro Henrique Silva Forti
+Data de Criação:25/09/2019
+*/
+
+#include<stdio.h>
+#include<windows.h>
+
+int main(){
+	int num1 = 0, num2 = 0, soma = 0;
+	
+	printf("informe um numero inteiro : ");
+	//leia(num1);
+	scanf("%i", &num1);
+	printf("informe o segundo numero inteiro : ");
+	//leia(num2);
+	scanf("%i", &num2);
+	soma = num1 + num2;
+	printf("soma = %i + %i = %i\n\n\n",num1,num2, soma);
+	system("pause");
+		
+}
+
+-----------------------------------------------------------------------------------------
+
+
+exemplo locale:
+
+/*
+função: ser chato
+Autor e autor: Matheus Gabriel e Silva e Pedro Henrique Silva Forti
+Data de Criação:25/09/2019
+*/
+
+#include<locale.h>
+
+int main(){
+	setlocale(LC_ALL, "");
+}
+
+-----------------------------------------------------------------------------------------
+
+media:
+
+/*
+função: Média de três numeros
+Autor e autor: Matheus Gabriel e Silva e Pedro Henrique Silva Forti
+Data de Criação:25/09/2019
+*/
+
+#include<stdio.h>
+#include<windows.h>
+
+int main(){
+	int num1 = 0, num2 = 0, num3 = 0, media = 0;
+	
+	printf("Informe um numero inteiro : ");
+	scanf("%i", &num1);
+	
+	printf("Informe o segundo numero inteiro : ");
+	scanf("%i", &num2);
+	
+	printf("Informe o terceiro numero inteiro : ");
+	scanf("%i", &num3);
+	
+	media = (num1 +num2 +num3)/3;
+	printf("Media = %i\n\n\n",media);
+	system("pause");
+}
+-----------------------------------------------------------------------------------------
+
+quociente:
+
+/*
+função: Média de três numeros
+Autor e autor: Matheus Gabriel e Silva e Pedro Henrique Silva Forti
+Data de Criação:25/09/2019
+*/
+
+#include<iostream>
+
+int main(){
+	int num1 = 0, num2 = 0, quoc = 0, resto= 0;
+	
+	printf("Informe um numero inteiro : ");
+	scanf("%i", &num1);
+	
+	printf("Informe o segundo numero inteiro : ");
+	scanf("%i", &num2);
+	
+	quoc = num1 / num2;
+	resto = num1 - (quoc * num2);
+	printf("O resto e: %i, e o quociente e: %i\n\n\n",resto, quoc);
+	return 0;
+	system("pause");
+}
